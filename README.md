@@ -60,6 +60,7 @@
 ```bash
 git clone https://github.com/GutiFer4/HoneyX.git
 cd HoneyX
+```
 
 ### 🐝 2. Desplegar la máquina Honeypot
 
@@ -69,6 +70,7 @@ chmod +x 00_run_all_honeypot.sh
 
 cd honeypot
 docker-compose up -d --build
+```
 
 ### 📈 3. Desplegar la máquina de Monitorización
 
@@ -78,6 +80,7 @@ chmod +x 00_run_all_monitor.sh
 
 cd monitor
 docker-compose up -d --build
+```
 
 
 ## 🌐 Cómo acceder a Grafana
@@ -86,6 +89,7 @@ Una vez desplegado el entorno de monitorización, accede a Grafana desde tu nave
 
 ```cpp
 http://<IP_DE_LA_MÁQUINA_MONITORIZACIÓN>:3000
+```
 
 Usuario: admin
 Contraseña: admin
