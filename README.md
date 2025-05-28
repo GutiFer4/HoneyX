@@ -1,6 +1,6 @@
-# 🐝 HoneyX – Honeypot Distribuido para TFM
+# 🐝 HoneyX
 
-**HoneyX** es un sistema honeypot distribuido desarrollado como parte de un Trabajo de Fin de Máster (TFM). Su objetivo es simular servicios vulnerables para atraer posibles atacantes y registrar sus actividades. El sistema está dividido en dos componentes principales:
+**HoneyX** es un sistema honeypot distribuido. Su objetivo es simular servicios vulnerables para atraer posibles atacantes y registrar sus actividades. El sistema está dividido en dos componentes principales:
 
 - **Honeypot**: Simula servicios vulnerables y recopila datos de posibles intrusiones.
 - **Monitorización**: Analiza y visualiza los datos recopilados mediante herramientas como Grafana y Prometheus.
@@ -10,26 +10,47 @@
 ## 📁 Estructura del Proyecto
 
 .
+
 ├── honeypot/
+
 │ ├── apache/
+
 │ ├── fakessh/
+
 │ ├── mysql/
+
 │ ├── node_exporter/
+
 │ ├── proftpd/
+
 │ ├── prometheus/
+
 │ └── docker-compose.yaml
+
 ├── monitor/
+
 │ ├── grafana/
+
 │ ├── loki/
+
 │ ├── promtail/
+
 │ └── docker-compose.yaml
+
 ├── scripts_honeypot/
+
 │ └── run_all.sh
+
 ├── scripts_monitor/
+
 │ └── run_all.sh
+
 ├── web_test/
+
 ├── 00_run_all_honeypot.sh
+
 ├── 00_run_all_monitor.sh
+
 └── README.md
 
 ---
