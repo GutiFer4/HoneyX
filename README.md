@@ -9,49 +9,31 @@
 
 ## 📁 Estructura del Proyecto
 
+```plaintext
 .
-
 ├── honeypot/
-
-│ ├── apache/
-
-│ ├── fakessh/
-
-│ ├── mysql/
-
-│ ├── node_exporter/
-
-│ ├── proftpd/
-
-│ ├── prometheus/
-
-│ └── docker-compose.yaml
-
+│   ├── apache/
+│   ├── fakessh/
+│   ├── mysql/
+│   ├── node_exporter/
+│   ├── proftpd/
+│   ├── prometheus/
+│   └── docker-compose.yaml
 ├── monitor/
-
-│ ├── grafana/
-
-│ ├── loki/
-
-│ ├── promtail/
-
-│ └── docker-compose.yaml
-
+│   ├── grafana/
+│   ├── loki/
+│   ├── promtail/
+│   └── docker-compose.yaml
 ├── scripts_honeypot/
-
-│ └── run_all.sh
-
+│   └── run_all.sh
 ├── scripts_monitor/
-
-│ └── run_all.sh
-
+│   └── run_all.sh
 ├── web_test/
-
 ├── 00_run_all_honeypot.sh
-
 ├── 00_run_all_monitor.sh
-
 └── README.md
+
+```
 
 ---
 
