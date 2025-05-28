@@ -11,28 +11,27 @@
 
 ```plaintext
 .
-├── honeypot/
-│   ├── apache/
-│   ├── fakessh/
-│   ├── mysql/
-│   ├── node_exporter/
-│   ├── proftpd/
-│   ├── prometheus/
-│   └── docker-compose.yaml
-├── monitor/
-│   ├── grafana/
-│   ├── loki/
-│   ├── promtail/
-│   └── docker-compose.yaml
 ├── scripts_honeypot/
-│   └── run_all.sh
+│   ├── 01_setup.sh
+│   ├── 02_gen_compose.sh
+│   ├── 03_prometheus.sh
+│   ├── 04_ftp.sh
+│   ├── 05_apache.sh
+│   ├── 061_sql_init.sh
+│   └── 06_mysql.sh
+|   └── 07_promtail.sh
+|   └── web/
 ├── scripts_monitor/
-│   └── run_all.sh
+│   ├── 01_setup.sh
+│   ├── 02_gen_compose
+│   ├── 03_loki.sh
+│   └── 04_grafana.sh
+|   └── antiguo_grafana.json
+|   └── apache_grafana.json
 ├── web_test/
 ├── 00_run_all_honeypot.sh
 ├── 00_run_all_monitor.sh
 └── README.md
-
 ```
 
 ---
