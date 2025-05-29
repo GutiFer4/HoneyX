@@ -63,8 +63,19 @@
 git clone https://github.com/GutiFer4/HoneyX.git
 cd HoneyX
 ```
+### 🐝 2. Ajustar el archivo de configuración de promtail para apuntar a la ip donde desplegarás la Máquina de Monitorización
 
-### 🐝 2. Desplegar la máquina Honeypot
+```bash
+sudo nano scripts_honeypot/07_promtail.sh
+```
+Dentro de este arhivo cambiaremos la ip de la linea 15:
+
+```bash
+clients:
+  - url: http://< IP DE TU MAQUINA DE MONITORIZACIÓN >:3100/loki/api/v1/push
+```
+
+### 🐝 3. Desplegar la máquina Honeypot
 
 ```bash
 chmod +x 00_run_all_honeypot.sh
@@ -74,7 +85,7 @@ cd honeypot
 docker-compose up -d --build
 ```
 
-### 📈 3. Desplegar la máquina de Monitorización
+### 📈 4. Desplegar la máquina de Monitorización
 
 ```bash
 chmod +x 00_run_all_monitor.sh
