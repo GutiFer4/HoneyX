@@ -79,7 +79,7 @@ clients:
 
 ```bash
 chmod +x 00_run_all_honeypot.sh
-./00_run_all_honeypot.sh
+sudo ./00_run_all_honeypot.sh
 
 cd honeypot
 docker-compose up -d --build
@@ -89,7 +89,7 @@ docker-compose up -d --build
 
 ```bash
 chmod +x 00_run_all_monitor.sh
-./00_run_all_monitor.sh
+sudo ./00_run_all_monitor.sh
 
 cd monitor
 docker-compose up -d --build
