@@ -65,7 +65,7 @@
 ### 🔽 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/ernestoo-v/HoneyX
+git clone https://github.com/GutiFer4/HoneyX
 cd HoneyX
 ```
 
